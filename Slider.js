@@ -47,18 +47,18 @@ var Muestra3 = function(){
 var index = 1;
 var Muestreo = setInterval(function(){
 						if (index == 3){
-							//Muestra3;
-							console.log(3);
+							Muestra3;
+							//console.log(3);
 							index = 1;
 						}
 						else if(index == 2){
-							//Muestra2;
-							console.log(2);
+							Muestra2;
+							//console.log(2);
 							index++;
 						}
 						else{
-							//Muestra1;
-							console.log(1);
+							Muestra1;
+							//console.log(1);
 							index++;
 						}
 		},3 * 1000 /* 3 segundos */);
