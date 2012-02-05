@@ -7,7 +7,7 @@ $(document).ready(function(){ // Script del Slider
 
 
 	 
- var Muestra1 = function(){
+// var Muestra1 = function(){
     $("a.opcion1").click(function(e){
         $('a.opcion2, a.opcion3').removeClass('active');
         $(this).addClass('active');
@@ -17,9 +17,9 @@ $(document).ready(function(){ // Script del Slider
         return false;
         e.preventDefault();
     });
-};
+//};
  
-var Muestra2 = function(){
+//var Muestra2 = function(){
     $("a.opcion2").click(function(e){
         $('a.opcion1, a.opcion3').removeClass('active');
         $(this).addClass('active');
@@ -29,9 +29,9 @@ var Muestra2 = function(){
         return false;
         e.preventDefault();
     });
- };
+ //};
 
-var Muestra3 = function(){
+//var Muestra3 = function(){
     $("a.opcion3").click(function(e){
          $('a.opcion2, a.opcion1').removeClass('active');
         $(this).addClass('active');
@@ -41,23 +41,26 @@ var Muestra3 = function(){
         return false;
         e.preventDefault();
     });
-};
+//};
 	
 //setInterval 
 var index = 1;
 var Muestreo = setInterval(function(){
 						if (index == 3){
-							Muestra3;
+							//Muestra3;
+							$("a.opcion3").click()
 							//console.log(3);
 							index = 1;
 						}
 						else if(index == 2){
-							Muestra2;
+							//Muestra2;
+							$("a.opcion2").click()
 							//console.log(2);
 							index++;
 						}
 						else{
-							Muestra1;
+							//Muestra1;
+							$("a.opcion1").click()
 							//console.log(1);
 							index++;
 						}
